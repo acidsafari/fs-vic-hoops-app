@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.MainAside {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  flex: 2;
+}
+

@@ -1,0 +1,36 @@
+/* || header layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Scribble Box', monospace;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(242, 125, 7);
+}
+
+.Header {
+    background-color: #0e0c83;
+    font-variant: small-caps; 
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.HeaderVideo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px; 
+    height: 0;
+}
+
+/* missing being reactive and reducing size when changing page
+*/

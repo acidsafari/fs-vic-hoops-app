@@ -1,0 +1,72 @@
+/* || navigation layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.Navigation {
+    color: #0e0c83;
+    background-color: rgb(237, 159, 81);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Scribble Box', monospace;
+    /*
+    z-index: 999;
+    */
+}
+
+ul.NavigationMenus {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+ul.NavigationMenus li {
+    position: relative;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+ul.NavigationMenus li a {
+    color: #0e0c83;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul.NavigationMenus li a:hover{
+    color: rgb(255, 255, 255);
+}
+  
+.SearchBar {
+    align-items: center;
+    padding: 0;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.SearchBarContainer form {
+    padding: 10px;
+    margin: 0;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

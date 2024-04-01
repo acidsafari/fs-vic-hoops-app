@@ -1,0 +1,482 @@
+/* || General setup */
+
+html, body {
+    margin: 0; 
+    padding: 0;
+}
+  
+html {
+    font-size: 10px; 
+    background-color: #ffffff;
+  }
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    flex: 2;
+    display: flex; 
+    flex-basis: auto;
+    flex-direction: column;
+}
+
+/* || typography */
+
+h1, h2, h3 {
+    font-family: 'Scribble Box', monospace;
+    color: #0e0c83;
+}
+  
+p, input, label, li, a {
+    font-family: 'Verdana', sans-serif;
+    color: #0e0c83;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+  
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(242, 125, 7);
+}
+  
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+  
+h3 {
+    font-size: 2.2rem;
+}
+  
+p, li, a {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+blockquote, figcaption {
+    font-style: italic;
+    background-color: rgba(212, 212, 212, 0.914);
+}
+
+
+/* || navigation layout */
+  
+nav {
+    color: #0e0c83;
+    background-color: rgb(237, 159, 81);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1% 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Scribble Box', monospace;
+}
+
+nav a[class="button"]:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav a {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0e0c83;
+}
+
+nav form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+}
+  
+input {
+    font-size: 1.6rem;
+    height: 32px;
+}
+  
+input[type="search"] {
+    flex: 3;
+}
+  
+input[type="submit"] {
+    flex: 1;
+    margin-left: 1rem;
+    background: #0e0c83;
+    border: 0;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background: rgb(242, 125, 7);
+}
+
+/* || header embedding & layout */
+
+header {
+    background-color: #0e0c83;
+    font-variant: small-caps; 
+    list-style-type: none;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* || main layout */
+
+section, aside, footer {
+    background-color: white;
+    padding: 1%;
+}
+
+div[type="news-subscribe"] {
+    display: flex;
+    flex: 2;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+  
+section[id="news-carousel"] {
+    width: 70%;
+    flex: 2;
+    display: flex; 
+    flex-basis: auto;
+    flex-direction: column;
+    background:rgb(246, 228, 210);
+}
+
+/********* Carousel section *********/
+
+.carousel-container {
+    /* max-width: 2000px;*/
+    position: relative;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.carousel {
+    display: none;
+}
+
+/* Insert forward & back arrows */
+.back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: #DBECEA;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/********* ASIDE SUBSCRIBE *********/
+
+aside[type="subscribe"] {
+    width: 30%;
+    flex: 1;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: rgb(237, 159, 81);
+    color: #0e0c83;
+    margin: 10px;
+    font-size: 1.6rem;
+}
+
+
+/* Players Section */
+.tablink {
+    background-color: #0e0c83;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: grab;
+    padding: 14px 16px;
+    font-size: 30px;
+    width: 33.3%;
+}
+  
+.tablink:hover {
+    background-color: #2196F3;
+}
+  
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+  
+#Looking {background-color: rgb(242, 125, 7);}
+#Started {background-color: rgb(237, 159, 81);}
+#Parents {background-color: gray;}
+
+
+/* COMPS & PROGS */
+section[type="comp-prog"] {
+    display: flex;
+    flex: 2;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div[type="comp-img-link"] {
+    display: flex;
+    flex: 2;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div[type="prog-img-link"] {
+    display: flex;
+    flex: 2;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* GET INVOLVED */
+.tablink2 {
+    background-color: #0e0c83;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: grab;
+    padding: 14px 16px;
+    font-size: 30px;
+    width: 33.3%;
+}
+  
+.tablink2:hover {
+    background-color: #2196F3;
+}
+  
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+  
+#Officials {background-color: rgb(242, 125, 7);}
+#Coaches {background-color: rgb(237, 159, 81);}
+#Volunteers {background-color: gray;}
+
+
+/* RESOURCES HUB & STATS */
+/* Layout */
+div[type="hub-stats"] {
+    display: flex;
+    flex: 2;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: left;
+}
+  
+section[id="resource-hub"] {
+    width: 75%;
+    flex: 2;
+    display: flex; 
+    flex-basis: auto;
+    flex-direction: row;
+}
+
+aside[type="stats"] {
+    width: 25%;
+    flex: 1;
+    flex-basis: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: rgb(237, 159, 81);
+    color: #0e0c83;
+    margin: 10px;
+    font-size: 1.6rem;
+}
+
+table {
+    border: 1px double #0e0c83; 
+    width: 100%;
+}
+
+.sidenav {
+    position: relative;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow-x: visible;
+    padding: 8px 0;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #064579;
+}
+  
+.sidenav-content {
+    margin-left: 10px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* STATS */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* PARTNERS Section */
+div[type="partner-img-link"] {
+    display: flex;
+    flex: 2;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+div.gallery-partner {
+    border: 1px solid #ccc;
+}
+  
+div.gallery-partner:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery-partner img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+  
+.responsive {
+    padding: 0 6px;
+    float: center;
+    width: 24.99999%;
+}
+
+div[class="gallery-partner"] {
+    box-sizing: border-box;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+  
+aside section {
+    padding-bottom: 10px;
+}
+
+
+/* FOOTER */ 
+footer {
+    margin-top: 10px;
+}
+
+footer {
+    clear: both; 
+    width: 100%; 
+    font: rgb(17, 25, 182); 
+    background: rgb(249, 249, 249); 
+}
+
+footer a:hover {
+    color: #2196F3;
+}
+
+/* Need to play with the alignemnt of both block */
+div[type="footer-split"] {
+    display: flex;
+    flex: 2;
+    flex-basis: auto;
+    flex-direction: block;
+    justify-content: normal;
+}
+
+

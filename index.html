@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FS Basketball Victoria</title>
+    <!-- Insert metadata -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Web app for all Victorian Basketball needs">
+    <meta name="keywords" content="basketball Victoria Australia community players events official information">
+    <meta name="author" content="DATM Samuel Klett Navarro">
+    
+    <!-- Insert metadata for the scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Insert CSS routing -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Insert JavaScript -->
+    
+    
+    <style>
+        </style>
+  </head>
+
+
+  <body>
+    
+    <!-- Insert navigation (index) HORIZONTAL AND 100% ACROSS -->
+    <nav>
+        <!-- Insert navigation (index) HORIZONTALLY WITH THE SEARCH BUTTON ON THE RIGHT -->
+        <!-- Insert hyperlinks -->
+        <a href="#news-carousel" class="button">News</a>
+        <a href="#players" class="button">Let's Play!</a>
+        <a href="#competitions" class="button">Comps / Programs</a>
+        <a href="#get-involved" class="button">Get Involved</a>
+        <a href="#resource-hub" class="button">Resource Hub</a>
+        <a href="#subscribe" class="button">Subscribe</a>
+
+        <form method="get">
+            <input type="search" name="query" placeholder="Looking for" />
+            <input type="submit" value="Search" />
+        </form>
+    </nav>
+
+    <header>
+        <div class="header-text-centerrow">
+            <h1>Be Part of Something Bigger !</h1>
+        </div>
+        <!-- Insert video -->
+        <div class="iframe-container" type="featured-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TOHaHEmRtKg?si=W87uGM0dzv3FfElz&amp;&mute=1&controls=1&showinfo=0&rel=0" 
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+    </header>
+    
+
+    <main>
+        <!-- Side by Side News & Subscribe -->
+        <div type="news-subscribe">
+        <!-- Insert News Reel -->
+            <section id="news-carousel">
+                <h1>NEWS</h1>
+                <div class="carousel-container">
+                    <!-- Insert image placeholders -->
+                    <div class="carousel">
+                        <img src="assets/nationals-vic-results.jpg" 
+                            alt="Clean Sweep At Nationals!" 
+                            style="width: 100%;">
+                        <div class="news-heading">
+                            <a href="https://www.basketballvictoria.com.au/news/victorias-clean-sweep-at-nationals" 
+                                class="link">Clean Sweep At Nationals!</a>
+                        </div>
+                    </div>    
+                    <div class="carousel">
+                        <img src="assets/women-selected.jpg" 
+                            alt="Victorians Selected"
+                            style="width: 100%;">
+                        <div class="news-heading">
+                            <a href="https://www.basketballvictoria.com.au/news/victorians-selected" 
+                                class="link">Victorians Selected</a>
+                        </div>
+                    </div>
+                    <div class="carousel">
+                        <img src="assets/high-performance-camp.jpg" 
+                            alt="National Performance Camp 2024"
+                            style="width: 100%;">
+                        <div class="news-heading">
+                            <a href="https://www.basketballvictoria.com.au/news/national-performance-camp-2024" 
+                                class="link">National Performance Camp 2024</a>
+                        </div>    
+                    </div> 
+                    <div class="carousel">
+                        <img src="assets/rollers-euro-tour.webp" 
+                            alt="Rollers Ready For European Tour"
+                            style="width: 100%;">
+                        <div class="news-heading">
+                            <a href="https://www.australia.basketball/news/3339914/rollers-ready-for-european-tour" 
+                                class="link">Rollers Ready For European Tour</a>
+                        </div> 
+                    </div> 
+                    <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </section>
+
+            <aside type="subscribe">
+                <section id="subscribe">
+                    <h2>Subscribe to our newsletter</h2>
+                    <!-- Insert textarea -->
+                    <form method="post">
+                        <label for="name">Name </label>
+                            <input type="text" title="name" 
+                            placeholder="Enter your name" required><br>
+                        <label for="surname">Surname </label>
+                            <input type="text" title="surname" 
+                            placeholder="Enter your surname" required><br>
+                        <label for="email">Email </label>
+                            <input type="email" title="email" 
+                            placeholder="Enter your email" required><br>
+                        <label for="postcode">Postcode </label>
+                            <input type="text" title="postcode" 
+                            placeholder="Enter your postcode" required><br>
+                        <br>
+                        <label for="newsletter">Please send me the newsletter </label>
+                            <input type="submit" value="Subscribe"></input><br>
+                    </form>
+                </section>
+            </aside>
+        </div>
+
+
+        <!-- Players Section / Let's Play! -->
+        <section id="players">
+            <h1>Let's Play!</h1>
+            <button class="tablink" onclick="openPage('Looking', this, 'rgb(242, 125, 7)')">Looking to Play?</button>
+            <button class="tablink" id="defaultOpen" onclick="openPage('Started', this, 'rgb(237, 159, 81)')">Getting Started</button>
+            <button class="tablink" onclick="openPage('Parents', this, 'gray')">Coach your Parents</button>
+
+            <div id="Looking" class="tabcontent">
+                <h3>Looking to Play?</h3>
+                <p>Home is where the heart is..</p>
+            </div>
+
+            <div id="Started" class="tabcontent">
+                <h3>Getting Started</h3>
+                <p>Some news this fine day!</p>
+            </div>
+
+            <div id="Parents" class="tabcontent">
+                <h3>Coach your Parents</h3>
+                <p>Get in touch, or swing by for a cup of coffee.</p>
+            </div>
+        </section>
+
+
+        <!-- COMPETITIONS AND PROGRAMS -->
+        <section id="competitions" type="comp-prog">
+            <div type="comps">
+            <!-- Insert image placeholders -->
+            <h2>Competitions</h2>
+                <div type="comp-img-link">
+                    <figure>
+                        <iframe src="dummy_320x240_ffffff_fc25b4_gallery-placeholder.png" 
+                            frameborder="0">
+                        </iframe> 
+                        <figcaption>Comp Image 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="dummy_320x240_ffffff_fc25b4_gallery-placeholder.png" 
+                            alt="Weather Image Placeholder">
+                        <figcaption>Comp Image 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="dummy_320x240_ffffff_fc25b4_gallery-placeholder.png" 
+                            alt="Weather Image Gallery Placeholder">
+                        <figcaption>Comp Image 3</figcaption>
+                    </figure>
+                </div>
+            </div>  
+            <div type="programs">
+                <!-- Insert image placeholders -->
+                <h2>Programs</h2>
+                <div type="prog-img-link">
+                    <figure>
+                        <iframe src="dummy_320x240_ffffff_fc25b4_gallery-placeholder.png" 
+                            frameborder="0">
+                        </iframe> 
+                        <figcaption>Prog Image 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="dummy_320x240_ffffff_fc25b4_gallery-placeholder.png" 
+                            alt="Weather Image Placeholder">
+                        <figcaption>Prog Image 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="dummy_320x240_ffffff_fc25b4_gallery-placeholder.png" 
+                            alt="Weather Image Gallery Placeholder">
+                        <figcaption>Prog Image 3</figcaption>
+                    </figure>
+                </div>
+            </div> 
+        </section>
+
+
+        <!-- GET INVOLVED -->
+        <section id="get-involved">
+            <h1>Get Involved</h1>
+                <button class="tablink2" onclick="openPage('Officials', this, 'rgb(242, 125, 7)')">Officials</button>
+                <button class="tablink2" id="defaultOpen" onclick="openPage('Coaches', this, 'rgb(237, 159, 81)')">Coaches</button>
+                <button class="tablink2" onclick="openPage('Volunteers', this, 'gray')">Volunteers</button>
+
+                <div id="Officials" class="tabcontent">
+                <h3>Officials</h3>
+                <p>whether you are refereeing or keeping score ..</p>
+                </div>
+
+                <div id="Coaches" class="tabcontent">
+                <h3>Coaches</h3>
+                <p>Bring their dreams to life.</p>
+                </div>
+
+                <div id="Volunteers" class="tabcontent">
+                <h3>Volunteers</h3>
+                <p>There are many ways to help out off the pitch.</p>
+                </div>
+        </section>
+
+        <!-- RESOURCES HUB & STATS -->
+        <div type="h-s">
+            <h1>Resource Hub</h1>
+        <div type="hub-stats">
+            <section id="resource-hub">
+                <div class="sidenav">
+                    <a href="#parents" class="button">Parents</a>
+                    <a href="#coaches" class="button">Coaches</a>
+                    <a href="#officials" class="button">Officials</a>
+                    <a href="#docs" class="button">Documents</a>
+                    <a href="#cse" class="button">Child Safety Standards</a>
+                    <a href="#inclusion" class="button">Diversity & Inclusion</a>
+                </div>
+                
+                <div class="sidenav-content">
+                    <div id="parents">
+                    <h3>Parents Hub</h3>
+                    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    </div>
+                    <div id="coaches">
+                        <h3>Coaches Hub</h3>
+                        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    </div>
+                    <div id="officials">
+                        <h3>Officials Hub</h3>
+                        <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+                    </div>
+                </div>  
+            </section>
+
+            <aside type="stats">
+                <section id="stats">
+                    <h2>Basketball Stats<br>Victoria</h2>
+                    <!-- Insert textarea -->
+                    <table border="1px" width="100%">
+                    <tr>
+                        <th>VALUE</th>
+                        <th>STAT</th>
+                    </tr>
+                    <tr>
+                        <td>Players Registered</td>
+                        <td>200.000</td>
+                    </tr>
+                    <tr>
+                        <td>Players by gender</td>
+                        <td>M-54 / F-46</td>
+                    </tr>
+                    <tr>
+                        <td>% Total State Players</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>Coaches & Officials</td>
+                        <td>1234</td>
+                    </tr>
+                </table>
+                </section>
+            </aside>
+        </div>
+        </div>  
+
+        <!-- PARTNERS -->
+        <section id="partners">
+            <h2>Partners</h2>
+            <div type="partner-img-link">
+            <div class="responsive">
+                <div class="gallery-partner">
+                  <a target="_blank" href="sponsor1.jpg">
+                    <img src="sponsor1.jpg" alt="sponsor1">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery-partner">
+                  <a target="_blank" href="sponsor2.jpg">
+                    <img src="sponsor2.jpg" alt="sponsor2">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery-partner">
+                  <a target="_blank" href="sponsor2.jpg">
+                    <img src="sponsor2.jpg" alt="sponsor2">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="gallery-partner">
+                  <a target="_blank" href="sponsor2.jpg">
+                    <img src="sponsor2.jpg" alt="sponsor2">
+                  </a>
+                  <div class="desc">Add a description of the image here</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div type="footer-split">
+            <div type="left-foot">
+                <p>©Copyright 2024 by Samuel Klett Navarro. <br>
+                    All rights reversed, Creative Commons apply for shared content.
+                </p>
+                <a href="mailto:someone@example.com">EMAIL US</a><br>
+                <a href="#terms-conditions">Terms and Conditions</a>
+            </div>
+            <div type="right-foot">
+                <!-- Insert list of links -->
+        </div>
+    </footer>
+
+    <script language="JavaScript" type="text/JavaScript" 
+        src="main.js" type="module">
+    </script>
+
+  </body>
+</html>

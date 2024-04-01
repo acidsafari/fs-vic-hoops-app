@@ -1,0 +1,47 @@
+/* || news layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Scribble Box', monospace;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #0e0c83;
+}
+
+a {
+    color: #fff;
+}
+
+.Subscribe {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    overflow: hidden;
+    color: #0e0c83;
+    background:rgb(242, 125, 7);
+    justify-content: left;
+    font-size: 1.2rem;
+    gap: 2rem;
+    padding: 5px 1rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.Form1 {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+
+
