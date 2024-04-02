@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/fs-basket-app/static/css/main.3bf767f6.css",
+    "main.js": "/fs-basket-app/static/js/main.8824f421.js",
+    "static/js/453.eca8abfd.chunk.js": "/fs-basket-app/static/js/453.eca8abfd.chunk.js",
+    "static/media/fig2WomenSelected.jpg": "/fs-basket-app/static/media/fig2WomenSelected.f5f083889f0317b9e424.jpg",
+    "static/media/HighPerformanceCamp.jpg": "/fs-basket-app/static/media/HighPerformanceCamp.83f1e7402dd49b7ba47e.jpg",
+    "static/media/fig1NationalsVicResults.jpg": "/fs-basket-app/static/media/fig1NationalsVicResults.2a85cb655ffec318675d.jpg",
+    "static/media/fig4RollersEuroTour.webp": "/fs-basket-app/static/media/fig4RollersEuroTour.07ecf9b6c276c88b8690.webp",
+    "static/media/SSV1.png": "/fs-basket-app/static/media/SSV1.ff1ca7419e46a31a3e86.png",
+    "static/media/NBL.png": "/fs-basket-app/static/media/NBL.e66880f2d0021ff97c7c.png",
+    "index.html": "/fs-basket-app/index.html",
+    "main.3bf767f6.css.map": "/fs-basket-app/static/css/main.3bf767f6.css.map",
+    "main.8824f421.js.map": "/fs-basket-app/static/js/main.8824f421.js.map",
+    "453.eca8abfd.chunk.js.map": "/fs-basket-app/static/js/453.eca8abfd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bf767f6.css",
+    "static/js/main.8824f421.js"
+  ]
+}
